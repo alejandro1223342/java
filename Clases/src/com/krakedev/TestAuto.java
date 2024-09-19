@@ -11,18 +11,18 @@ public class TestAuto {
 		
 		//Primer Auto
 		
-		a1.marca="Chevrolet";
-		a1.anio=1997;
-		a1.precio=1999;
+		a1.setMarca("Chevrolet");
+		a1.setAnio(1997);
+		a1.setPrecio(1999);
 		
 		//Segundo Auto
 		
-		a2.marca="Nissan";
-		a2.anio=2000;
-		a2.precio=3000;
+		a2.setMarca("Nissan");
+		a2.setAnio(2000);
+		a2.setPrecio(3000);
 		
-		System.out.println("El primer auto es: " + a1.marca +" del año "+a1.anio+" con precio "+a1.precio);
-		System.out.println("El segundo auto es: " + a2.marca +" del año "+a2.anio+" con precio "+a2.precio);
+		System.out.println("El primer auto es: " + a1.getMarca() +" del año "+a1.getAnio()+" con precio "+a1.getPrecio());
+		System.out.println("El segundo auto es: " + a2.getMarca() +" del año "+a2.getAnio()+" con precio "+a2.getPrecio());
 
 		
 
