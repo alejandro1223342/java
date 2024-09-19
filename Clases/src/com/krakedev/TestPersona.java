@@ -13,6 +13,9 @@ public class TestPersona {
 		// 2.Instanciar un objeto Persona, refeciarlo con p
 		p = new Persona();
 		Persona p2 = new Persona();
+		
+		Persona p3 = new Persona("Alejandro");
+		Persona p4= new Persona("Alejandro",21,1.75);
 
 		// 3. Accedo a los atributos
 		System.out.println("nombre " + p.getNombre());
@@ -34,6 +37,10 @@ public class TestPersona {
 		System.out.println("*********");
 		System.out.println("p.nombre: " + p.getNombre());
 		System.out.println("p2.nombre " + p2.getNombre());
+				
+		
+
+		
 
 	}
 
