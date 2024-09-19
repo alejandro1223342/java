@@ -13,5 +13,14 @@ public class Rectangulo {
 		return area;
 
 	}
+	
+	public double calcularPerimetro() {
+		
+		int perimetro;
+		
+		perimetro= (base*2)+(altura*2);
+		
+		return perimetro;
+	}
 
 }
