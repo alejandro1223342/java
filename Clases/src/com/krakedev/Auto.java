@@ -7,6 +7,13 @@ public class Auto {
 	private int anio;
 	
 	private float precio;
+	
+	public Auto(String marca,int anio, float precio) {
+		this.marca=marca;
+		this.anio=anio;
+		this.precio=precio;
+		
+	}
 
 	public String getMarca() {
 		return marca;

@@ -5,14 +5,15 @@ public class TestCuadrado {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Cuadrado c1 = new Cuadrado();
-		Cuadrado c2 = new Cuadrado();
-		Cuadrado c3 = new Cuadrado();
+		Cuadrado c1 = new Cuadrado(4);
+		Cuadrado c2 = new Cuadrado(6);
+		Cuadrado c3 = new Cuadrado(8);
 		
 		
-		c1.setLado(4);
+		/*c1.setLado(4);
 		c2.setLado(6);
 		c3.setLado(8);;
+		*/
 		
 		double areaCUno = c1.calcularArea();
 		double areaCDos = c2.calcularArea();
