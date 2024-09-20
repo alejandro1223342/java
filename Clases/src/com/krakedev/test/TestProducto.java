@@ -1,5 +1,5 @@
-package com.krakedev;
-
+package com.krakedev.test;
+import com.krakedev.Productos;
 public class TestProducto {
 
 	public static void main(String[] args) {

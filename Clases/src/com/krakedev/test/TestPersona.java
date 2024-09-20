@@ -1,5 +1,5 @@
-package com.krakedev;
-
+package com.krakedev.test;
+import com.krakedev.Persona;
 public class TestPersona {
 
 	// Clase ejecutable metodo main
