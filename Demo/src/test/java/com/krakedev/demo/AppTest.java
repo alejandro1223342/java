@@ -1,8 +1,6 @@
-package com.krakedev.demo;
+package test.java.com.krakedev.demo;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * Unit test for simple App.

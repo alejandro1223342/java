@@ -1,4 +1,4 @@
-package com.krakedev.demo;
+package main.java.com.krakedev.demo;
 
 /**
  * Hello world!
