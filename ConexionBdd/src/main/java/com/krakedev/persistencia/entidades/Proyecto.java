@@ -23,11 +23,10 @@ public class Proyecto {
 		this.fecha_entrega = fecha_entrega;
 	}
 	
-	public Proyecto(int proy_id, String proyecto, BigDecimal monto) {
+	public Proyecto(int proy_id) {
 		super();
 		this.proy_id = proy_id;
-		this.proyecto = proyecto;
-		this.monto = monto;
+		
 		
 	}
 

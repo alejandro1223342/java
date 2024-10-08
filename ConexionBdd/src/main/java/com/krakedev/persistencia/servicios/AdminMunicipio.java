@@ -4,11 +4,16 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.krakedev.persistencia.entidades.Municipio;
 import com.krakedev.persistencia.utils.ConexionBDD;
 
 public class AdminMunicipio {
-	public static void insertar(Municipio municipio) {
+	private static final Logger LOGGER = LogManager.getLogger(AdminProyecto.class);
+
+	public static void insertar(Municipio municipio) throws Exception {
 		Connection con = null;
 		PreparedStatement ps;
 
@@ -23,18 +28,16 @@ public class AdminMunicipio {
 			ps.setInt(3, municipio.getCiu_id().getCiu_id());
 			ps.executeUpdate();
 
-			System.out.println("insertar");
+			//System.out.println("insertar");
 		} catch (Exception e) {
-			// mostrar el error al usuario
-			System.out.println(e.getMessage());
-			// loggear el error
-			e.printStackTrace();
+			LOGGER.error("Error con la base de datos",e);
+			throw new Exception("Error con la base de datos");
 		} finally {
 			try {
 				con.close();
 			} catch (SQLException e) {
-				e.printStackTrace();
-				System.out.println("Error de infraestructura");
+				LOGGER.error("Error con la base de datos",e);
+				throw new Exception("Error con la base de datos");
 			}
 		}
 
